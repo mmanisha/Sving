@@ -1,0 +1,624 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.group {
+}
+
+.group:before,
+.group:after {
+   content: "";
+   display: table;
+} 
+.group:after {
+   clear: both;
+}
+
+/* Font classes */
+.georgia	{
+	font-family:'Georgia';
+}
+
+.helvetica_neue	{
+	font-family:'HelveticaNeue';
+}
+
+/* Regular code begins here */
+
+#logo_nav_sns,
+#breadcrumb_main,
+#products_main,
+#products_main_men,
+#products_main_women,
+#products_main_kids {
+	width:974px; /* 1024px - 50px = 974px */
+	padding:0px 25px 0px 25px;
+	margin:0px auto 0px auto;
+}
+
+#logo_nav_sns	{
+	height:170px;
+	background-image:url(images/bg_denim.jpg);
+	background-repeat:repeat-x;
+}
+
+	#logo	{
+		width:142px;
+		height:157px; /* 170 - 13 = 157 */
+		padding:13px 0px 0px 1px;
+		float:left;
+	}
+	
+	#nav_menu	{
+		width:620px;
+		margin:0px 0px 0px 20px;
+		float:left;
+	}
+
+		#nav_menu ul li a	{
+			display:inline-block;
+			width:143px; /* 154 - 11 = 143 */
+			height:20px; /* 145 - 125 = 20 */
+			padding:125px 0px 0px 11px;
+			float:left;
+			border-left:1px dashed #ffffff;
+			font-size:20px;
+			color:#ffffff;
+			text-decoration:none;
+		}
+		
+		#nav_menu ul li a:hover	{
+			color:#56358c;
+		}
+	
+	#sm_sprites	{
+			width:127px;
+			padding:120px 0px 0px 0px;
+			float:right;
+		}
+		
+		#sm_sprites li	{
+			display:inline-block;
+			float:left;
+		}
+		
+		#sm_sprites li a {
+			background-image:url(images/sm_sprites2.png);
+			display:block;
+			text-decoration:none;
+			text-indent:-9999px;
+			width:25px;
+			height:25px;
+			margin:0px 0px 0px 6px;
+		}
+		
+		#sm_sprites li a#fb_sprite {
+			background-position:0px 0px;
+		}
+		
+		#sm_sprites li a:hover#fb_sprite {
+			background-position:0px 25px;
+		}
+				
+		#sm_sprites li a#tw_sprite	{
+			background-position:-26px 0px;
+		}
+		
+		#sm_sprites li a:hover#tw_sprite	{
+			background-position:-26px 25px;
+		}
+				
+		#sm_sprites li a#gp_sprite	{
+			background-position:-52px 0px;
+		}
+		
+		#sm_sprites li a:hover#gp_sprite	{
+			background-position:-52px 25px;
+		}
+		
+		#sm_sprites li a#st_sprite	{
+			background-position:-78px 0px;
+		}
+		
+		#sm_sprites li a:hover#st_sprite	{
+			background-position:-78px 25px;
+		}		
+	
+#breadcrumb_main	{
+	height:34px;
+	background:#ffffff;
+}
+
+	#breadcrumb_main ul li	{
+		float:left;
+		padding:0px 5px 0px 0px;
+	}
+	
+	#breadcrumb_main ul li a	{
+		display:inline-block;
+		font-size:16px;
+		color:#000000;
+		padding:10px 5px 8px 0px;
+		text-decoration:none;
+	}
+	
+	#breadcrumb_main ul li a:hover	{
+		text-decoration:underline;
+	}
+	
+	.breadcrumb_page {
+		text-decoration:underline;
+	}
+
+#products_main	{
+	height:539px;
+	background:#ffffff;
+}
+
+	#products_categories li	{
+		width:321px;
+		height:539px;
+		display:inline-block;
+		float:left;
+		background:#000000;
+	}
+	
+.product_padding	{
+	margin:0px 5px 0px 6px;
+}
+
+#foot	{
+	width:1024px;
+	height:11px;
+	background:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:14px 0px 8px 0px;
+	margin:0px auto 0px auto;
+}
+
+	#copyright	{
+		float:right;	
+	}
+
+/* Product Category Pages */
+
+#products_main_men,
+#products_main_women,
+#products_main_kids	{
+	height:534px; /* 539 - 5 = 534 */
+	padding:5px 25px 0px 25px;
+}	
+
+#title_description_contain	{
+	width:974px;
+	height:118px;
+	margin:0px 0px 10px 0px;
+	float:left;
+}
+
+	#large_t	{
+		width:273px;
+		display:inline-block;
+		font-size:120px;
+		color:#ffffff;
+		float:left;
+	}
+	
+	#mens_description,
+	#womens_description,
+	#kids_description	{
+		display:inline-block;
+		width:475px;
+		color:#ffffff;
+		font-size:24px;
+		float:left;
+	}
+
+#disc_newa_types_contain	{
+	width:974px;
+	height:404px;
+}
+	#boy_image	{
+		display:inline-block;
+		width:135px;
+		height:404px;
+		float:left;
+		margin:0px 25px 0px 0px;
+	}
+	
+	#disc_newa_types	{
+		width:812px;
+		height:355px;
+		float:left;
+		margin:23px 0px 26px 0px;
+	}
+	
+	#disc_newa	{
+		width:812px;
+		height:272px;
+	}
+		
+	#discount	{
+		display:inline-block;
+		width:579px;
+		height:272px;
+		float:left;
+	}
+	
+	#new_a	{
+		display:inline-block;
+		width:225px;
+		height:272px;
+		float:left;
+		margin:0px 0px 0px 8px;
+	}
+	
+	#cat_types	{
+		width:813px;
+		height:76px;
+	}
+	
+	#cat_1,
+	#cat_2,
+	#cat_3	{
+		width:269px;
+		height:76px;
+		float:left;
+		margin:7px 0px 0px 0px;
+	}
+	
+	#cat_2	{
+		padding:0px 3px 0px 3px;
+	}
+
+/* Products Men */
+
+#products_main_men	{
+	background:#0072bc;
+}
+
+#mens_description	{
+	margin:40px 0px 0px 194px;
+}
+
+/* Products Women */
+
+#products_main_women	{
+	background:#ff6699;
+}
+
+#womens_description	{
+	margin:40px 0px 0px 194px;
+}
+
+/* Products Kids */
+
+#products_main_kids	{
+	background:#faa74a;
+}
+
+#kids_description	{
+	margin:40px 0px 0px 10px;
+}
+
+/* T-Shirts */
+
+#products_main_t	{
+	width:974px; /* 1024px - 50px = 974px */
+	height:545px; /* 539px - 5px = 534 */
+	padding:5px 25px 0px 25px;
+	background:#ffffff;
+	margin:0px auto 0px auto;
+}
+
+#large_tshirts_t	{
+	width:400px;
+	display:inline-block;
+	font-size:120px;
+	color:#696969;
+	float:left;
+}
+
+#drop_down_list_contain	{
+	display:inline-block;
+	width:506px;
+	height:27px;
+	color:#696969;
+	float:right;
+	margin:80px 0px 0px 0px;
+}
+
+	#drop_dl	{
+		color:#696969;
+		width:166px;
+		height:27px;
+		border:solid 1px #696969;
+	}
+	
+#item_sec_contain	{
+	width:974px;
+	height:412px;
+	float:left;
+	overflow:scroll;
+}
+	
+	#item_sec li {
+		width:283px;
+		height:412px;
+		padding:10px 10px 0px 10px;
+		border:solid 1px #b7b7b7;
+		margin:0px 9px 10px 0px;
+		float:left;
+	}
+	
+	.item_name	{
+		display:inline-block;
+		width:235px;
+		height:14px;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		color:#ba0010;
+		float:left;
+		margin:10px 0px 10px 2px;
+	}
+	
+	.item_price	{
+		width:35px;
+		height:14px;
+		text-align:right;
+		font-size:14px;
+		display:inline-block;
+		color:#696969;
+		float:right;
+		margin:10px 0px 10px 0px;
+	}
+	
+	.item_color	{
+		display:block;
+		width:283px;
+		height:14px;
+		font-size:14px;
+		float:left;
+	}
+	
+/* About Us */
+
+#about_main	{
+	width:974px; /* 1024px - 50px = 974px */
+	height:598px;
+	padding:0px 25px 0px 25px;
+	margin:0px auto 0px auto;
+	background-image:url(images/about_us_bg.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+#about_breadcrumb_main	{
+	width:974px;
+	height:34px;
+}
+
+	#about_breadcrumb_main ul li	{
+		float:left;
+		padding:0px 5px 0px 0px;
+	}
+	
+	#about_breadcrumb_main ul li a	{
+		display:inline-block;
+		font-size:16px;
+		color:#000000;
+		padding:10px 5px 8px 0px;
+		text-decoration:none;
+	}
+	
+	#about_breadcrumb_main ul li a:hover	{
+		text-decoration:underline;
+	}
+	
+	.breadcrumb_page {
+		text-decoration:underline;
+	}
+
+#about_content_contain	{
+	width:381px;
+	height:492px;
+	margin:50px 0px 0px 0px;
+}
+
+	#grey_h2	{
+		font-size:30px;
+		color:#696969;
+	}
+
+	#purple_h2	{
+		font-size:45px;
+		color:#56358c;
+		margin:0px 0px 18px 0px;
+	}
+	
+	#purple_h3	{
+		font-size:16px;
+		font-weight:bold;
+		color:#56358c;
+		margin:18px 0px 0px 0px;
+	}
+	
+	#about_content_contain p	{
+		font-size:15px;
+	}
+	
+/* Contact Page */
+#contact_main {
+	width:974px; /* 1024px - 50px = 974px */
+	height:598px;
+	padding:0px 25px 0px 25px;
+	margin:0px auto 0px auto;
+	background:#d0d1d3;
+}
+
+#contact_content_contain	{
+	width:972px;
+	height:538px;	
+}
+
+	#t_addy_map_contain	{
+		width:270px;
+		height:538px;
+		float:left;
+	}
+	
+		#contact_t_purple	{
+			width:270px;
+			height:53px;
+			font-size:67px;
+			color:#56358c;
+			margin:0px 0px 84px 0px;
+		}
+		
+		#contact_addy_left	{
+			width:270px;
+			height:113px;
+			text-align:right;
+			font-size:15px;
+			line-height:17px;
+			margin:0px 0px 84px 0px;
+		}
+		
+		#g_map	{
+			display:block;
+			width:255px; /* 270px - 15px = 255px */
+			height:203px;
+			border:1px solid #999999;
+			margin:0px 0px 0px 13px;
+		}
+	
+	#form_image_contain	{
+		width:663px;
+		height:538px;
+		margin:0px 0px 0px 39px;
+		float:left;
+	}
+	
+		#contact_content_1	{
+			font-family:Georgia;
+			font-size:14px;
+			display:block;
+			width:430px;
+			height:36px; /* 53px - 17px = 36px */
+			margin:17px 233px 0px 0px;
+		}
+		
+		#contact_content_2	{
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+			font-weight:bold;
+			font-style:italic;
+			display:block;
+			width:430px;
+			height:48px; /* 66px - 18px = 48px */
+			margin:18px 233px 0px 0px;
+		}
+		
+		#form_pic_contain	{
+			width:663px;
+			height:355px;	
+		}
+		
+			#form_contain	{
+				width:430px;
+				height:343px;
+				font-size:14px;
+				color:#000000;				
+				padding:12px 0px 0px 0px;
+				float:left;
+			}
+			
+				#form_contain ul li	{
+					margin:0px 0px 2px 0px;	
+				}
+			
+				#form_contain ul li span	{
+					font-family:Georgia;
+					display:inline-block;
+					font-size:14px;
+					width:80px;
+					height:18px;
+					padding:4px 0px 0px 0px;
+					float:left;
+				}
+			
+				.small_box,
+				.big_box	{
+					border:none;
+					width:334px;	
+				}
+				
+				.small_box	{					
+					height:21px;
+				}
+				
+				.big_box	{
+					height:48px;
+				}
+				
+				#sent	{
+					height:30px;
+					margin:10px 0px 0px 0px;	
+				}
+			
+			#contact_pic	{
+				width:233px;
+				height:343px;
+				padding:12px 0px 0px 0px;
+				float:left;
+			}
+			
+		#brand_registration	{
+			font-family:Georgia;
+			font-size:14px;
+			width:663px;
+			height:33px;
+			margin:31px 0px 0px 0px;
+		}
