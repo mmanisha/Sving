@@ -480,6 +480,7 @@ body	{
 	
 	.breadcrumb_page {
 		text-decoration:underline;
+		font-size:16px;
 	}
 
 #about_content_contain	{
