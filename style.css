@@ -65,6 +65,17 @@ table {
 
 /* Regular code begins here */
 
+.wrap {
+	width:1024px; 
+	margin:0px auto 0px auto; 
+	background:#ffffff;
+}
+
+body	{
+	background-image:url(images/bg_denim.jpg);
+	background-repeat:repeat;
+	}
+
 #logo_nav_sns,
 #breadcrumb_main,
 #products_main,
@@ -102,6 +113,7 @@ table {
 			padding:125px 0px 0px 11px;
 			float:left;
 			border-left:1px dashed #ffffff;
+			font-family:Georgia;
 			font-size:20px;
 			color:#ffffff;
 			text-decoration:none;
@@ -176,6 +188,7 @@ table {
 	
 	#breadcrumb_main ul li a	{
 		display:inline-block;
+		font-family:Georgia;
 		font-size:16px;
 		color:#000000;
 		padding:10px 5px 8px 0px;
@@ -186,7 +199,7 @@ table {
 		text-decoration:underline;
 	}
 	
-	.breadcrumb_page {
+	a.breadcrumb_page {
 		text-decoration:underline;
 	}
 
@@ -251,11 +264,13 @@ table {
 		display:inline-block;
 		width:475px;
 		color:#ffffff;
+		font-family:Georgia;
 		font-size:24px;
 		float:left;
 	}
 
 #disc_newa_types_contain	{
+	float:left;
 	width:974px;
 	height:404px;
 }
@@ -396,19 +411,20 @@ table {
 		display:inline-block;
 		width:235px;
 		height:14px;
-		font-family:Arial, Helvetica, sans-serif;
+		font-family:Tahoma;
 		font-size:14px;
 		font-weight:bold;
-		color:#ba0010;
+		color:#c41230;
 		float:left;
 		margin:10px 0px 10px 2px;
 	}
 	
 	.item_price	{
-		width:35px;
+		width:40px;
 		height:14px;
 		text-align:right;
-		font-size:14px;
+		font-family:Georgia;
+		font-size:18px;
 		display:inline-block;
 		color:#696969;
 		float:right;
@@ -419,7 +435,9 @@ table {
 		display:block;
 		width:283px;
 		height:14px;
+		font-family:Georgia;
 		font-size:14px;
+		color:#000000;
 		float:left;
 	}
 	
@@ -479,6 +497,7 @@ table {
 	}
 	
 	#purple_h3	{
+		font-family:Georgia;
 		font-size:16px;
 		font-weight:bold;
 		color:#56358c;
@@ -486,7 +505,9 @@ table {
 	}
 	
 	#about_content_contain p	{
+		font-family:Georgia;
 		font-size:15px;
+		line-height:18px;
 	}
 	
 /* Contact Page */
@@ -521,6 +542,7 @@ table {
 			width:270px;
 			height:113px;
 			text-align:right;
+			font-family:Georgia;			
 			font-size:15px;
 			line-height:17px;
 			margin:0px 0px 84px 0px;
@@ -551,7 +573,7 @@ table {
 		}
 		
 		#contact_content_2	{
-			font-family:Arial, Helvetica, sans-serif;
+			font-family:Georgia;
 			font-size:14px;
 			font-weight:bold;
 			font-style:italic;
@@ -592,7 +614,7 @@ table {
 				.small_box,
 				.big_box	{
 					border:none;
-					width:334px;	
+					width:334px;
 				}
 				
 				.small_box	{					
